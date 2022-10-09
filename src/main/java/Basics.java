@@ -103,6 +103,8 @@ public class Basics {
             System.out.println("Current count: " + (10 - x));
         }
 
+
+
     }
 
     /**
@@ -178,7 +180,9 @@ public class Basics {
          */
         if (arr.length > 1){
             for(int i = 0; i < arr.length; i++){
-                current_sum += i % 2;
+                if (i % 2 == 1){
+                    current_sum += arr[i];
+                }
             }
             return current_sum;
         }
